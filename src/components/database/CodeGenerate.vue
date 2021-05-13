@@ -194,8 +194,8 @@ export default {
   },
   methods: {
     getSchemas(visible) {
-      if(!visible){
-        return
+      if (!visible) {
+        return;
       }
       console.log(111);
       var api = "/database/schema/list";
@@ -206,13 +206,17 @@ export default {
           // 更新下拉框数据
           var body = res.body;
           if (body.success === true) {
-            var schemas = []
-            
-            var data = body.data
-            for(var i = 0;i < data.length;i++){
-              Array.push(schemas,{"key":data[i],"label":data[i],"value":data[i]})
+            var schemas = [];
+
+            var data = body.data;
+            for (var i = 0; i < data.length; i++) {
+              Array.push(schemas, {
+                key: data[i],
+                label: data[i],
+                value: data[i],
+              });
             }
-            this._data.schemas = schemas
+            this._data.schemas = schemas;
           } else {
             this.$message.error("获取Schemas失败");
           }

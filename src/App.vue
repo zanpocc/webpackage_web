@@ -20,7 +20,7 @@
                     <router-link to="/software/redis" tag="li">Redis</router-link>
                 </el-menu-item>
                 <el-menu-item index="3-2">
-                    <router-link to="/software/mongo" tag="li">MongoDB</router-link>
+                    <router-link to="/software/mongodb" tag="li">MongoDB</router-link>
                 </el-menu-item>
                 <el-menu-item index="3-3">
                     <router-link to="/software/kafka" tag="li">Kafka</router-link>
@@ -38,7 +38,7 @@
                     <router-link to="/database/codeGenerate" tag="li">CodeGenerate</router-link>
                 </el-menu-item>
             </el-submenu>
-            <el-submenu index="5">
+            <!-- <el-submenu index="5">
                 <template slot="title"><i class="el-icon-coffee-cup"></i>JVM</template>
                 <el-menu-item index="5-1">
                     <router-link to="/database/er" tag="li">内存布局</router-link>
@@ -46,21 +46,21 @@
                 <el-menu-item index="5-2">
                     <router-link to="/database/codeGenerate" tag="li">GC回收器</router-link>
                 </el-menu-item>
-            </el-submenu>
+            </el-submenu> -->
             <el-submenu index="6">
                 <template slot="title"><i class="el-icon-mobile"></i>GOTTY</template>
                 <el-menu-item index="6-1">
-                    <router-link to="/database/er" tag="li">内存布局</router-link>
+                    <router-link to="/terminal/Local" tag="li">本地终端</router-link>
                 </el-menu-item>
                 <el-menu-item index="6-2">
-                    <router-link to="/database/codeGenerate" tag="li">GC回收器</router-link>
+                    <router-link to="/terminal/Remote" tag="li">远程终端</router-link>
                 </el-menu-item>
             </el-submenu>
         </el-menu>
     </el-aside>
 
     <el-main>
-        <router-view />
+        <router-view/>
     </el-main>
 </el-container>
 </template>
