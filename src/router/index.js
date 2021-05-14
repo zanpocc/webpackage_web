@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+
 import Replace from '@/components/text/Replace'
 import Format from '@/components/text/Format'
 import CodeGenerate from '@/components/database/CodeGenerate'
